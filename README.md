@@ -23,7 +23,7 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minha
 
 ## 🌐 Acesse o projeto
 
-🔗 **Site:** https://mayanalimaaa.github.io/Site-Mayana.Dev/
+🔗 **Site:** https://mayanalimaaa.github.io/Portf-lio-/
 
 ## 📷 Preview
 
