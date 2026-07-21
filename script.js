@@ -33,10 +33,10 @@ const typing = document.getElementById("typing");
 
 const words = [
 
+
     "Desenvolvedora Front-End",
-    "Criando Interfaces Modernas",
-    "HTML • CSS • JavaScript",
-    "Sempre Aprendendo e Evoluindo"
+    "Apaixonada por tecnologia",
+    "Habilidades em HTML, CSS e JavaScript",
 
 ];
 
@@ -248,7 +248,7 @@ const copyright = document.querySelector(".copyright");
 if(copyright){
 
     copyright.innerHTML =
-    `© ${new Date().getFullYear()} Mayana.Lima - Todos os direitos reservados.`;
+    `© ${new Date().getFullYear()} Mayana Lima - Todos os direitos reservados.`;
 
 }
 
