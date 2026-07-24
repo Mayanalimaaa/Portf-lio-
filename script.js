@@ -293,22 +293,27 @@ window.addEventListener("scroll", () => {
 
     const currentScroll = window.pageYOffset;
 
+    // Efeito glass ao rolar
+    if (currentScroll > 80) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+    // Esconde ao descer e mostra ao subir
     if (currentScroll <= 0) {
 
         header.classList.remove("hide");
-
         return;
 
     }
 
     if (currentScroll > lastScroll && currentScroll > 100) {
 
-        // Descendo
         header.classList.add("hide");
 
     } else {
 
-        // Subindo
         header.classList.remove("hide");
 
     }
@@ -411,3 +416,24 @@ if (texto) {
     escreverTexto();
 
 }
+
+/*=========================================
+BARRA DE PROGRESSO
+=========================================*/
+
+const progressBar = document.querySelector(".scroll-progress");
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop = window.scrollY;
+
+    const pageHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress = (scrollTop / pageHeight) * 100;
+
+    progressBar.style.width = progress + "%";
+
+});
+
